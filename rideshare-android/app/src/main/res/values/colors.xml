@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6ECAFF</color>
+    <color name="colorPrimaryDark">#0086D2</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="polylineBack">#22000000</color>
+    <color name="polylineFront">#AAD81B60</color>
+    <color name="circleColor">#550086D2</color>
+
+    <color name="transportModeWalk">#6ecaff</color>
+    <color name="transportModeRun">#68f4fc</color>
+    <color name="transportModeBike">#61f9d2</color>
+    <color name="transportModeEBike">#5bf69e</color>
+    <color name="transportModeTram">#55f269</color>
+    <color name="transportModeBus">#6def4f</color>
+    <color name="transportModeSubway">#9aec49</color>
+    <color name="transportModeBoat">#c9e944</color>
+    <color name="transportModeTrain">#e6d23e</color>
+    <color name="transportModeECar">#e39a39</color>
+    <color name="transportModeCar">#df6033</color>
+    <color name="transportModeMotorcycle">#dc2e36</color>
+    <color name="transportModeAirplane">#d92968</color>
+    <color name="transportModeSkate">#df33b2</color>
+    <color name="transportModeSki">#d23ee6</color>
+    <color name="transportModeScooter">#b644e9</color>
+    <color name="transportModeSkilift">#9b49ec</color>
+    <color name="transportModeKayak">#6955f2</color>
+    <color name="transportModeHorse">#5b65f6</color>
+    <color name="transportModeHelicopter">#6188f9</color>
+    <color name="transportModeUnknown">#222222</color>
+
+    <color name="whiteText">#FFFFFF</color>
+    <color name="lightGray">#D6D7D7</color>
+</resources>

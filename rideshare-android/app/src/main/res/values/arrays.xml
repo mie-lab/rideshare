@@ -1,0 +1,27 @@
+<resources>
+    <!-- Reply Preference -->
+    <string-array name="setting_tracking_entries">
+        <item>Most Accurate</item>
+        <item>Accurate</item>
+        <item>Battery Saving</item>
+    </string-array>
+
+    <string-array name="setting_tracking_values">
+        <item>most_accurate</item>
+        <item>accurate</item>
+        <item>battery_saving</item>
+    </string-array>
+
+    <!-- Sync Preference -->
+    <string-array name="setting_sync_entries">
+        <item>Every Minute</item>
+        <item>Every 5 Minutes</item>
+        <item>Every 15 Minutes (Battery Saving)</item>
+    </string-array>
+
+    <string-array name="setting_sync_values">
+        <item>every_minute</item>
+        <item>every_5_minutes</item>
+        <item>every_15_minutes</item>
+    </string-array>
+</resources>

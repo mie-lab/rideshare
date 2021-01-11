@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/pastMobilityFragment"
+        android:name="ch.ethz.ikg.rideshare.ui.PastMobilityFragment"
+        android:label="fragment_past_mobility"
+        tools:layout="@layout/fragment_past_mobility" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="ch.ethz.ikg.rideshare.ui.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_pastMobilityFragment"
+            app:destination="@id/pastMobilityFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_predictedMobilityFragment"
+            app:destination="@id/predictedMobilityFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_sharedRidesFragment"
+            app:destination="@id/sharedRidesFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/settingsActivity"
+        android:name="ch.ethz.ikg.rideshare.ui.basic.SettingsActivity"
+        android:label="SettingsActivity" />
+    <activity
+        android:id="@+id/helpActivity"
+        android:name="ch.ethz.ikg.rideshare.ui.basic.HelpActivity"
+        android:label="activity_help"
+        tools:layout="@layout/activity_help" />
+    <activity
+        android:id="@+id/profileActivity"
+        android:name="ch.ethz.ikg.rideshare.ui.basic.ProfileActivity"
+        android:label="activity_profile"
+        tools:layout="@layout/activity_profile" />
+    <fragment
+        android:id="@+id/predictedMobilityFragment"
+        android:name="ch.ethz.ikg.rideshare.ui.PredictedMobilityFragment"
+        android:label="fragment_predicted_mobility"
+        tools:layout="@layout/fragment_predicted_mobility" />
+    <fragment
+        android:id="@+id/sharedRidesFragment"
+        android:name="ch.ethz.ikg.rideshare.ui.SharedRidesFragment"
+        android:label="fragment_shared_rides"
+        tools:layout="@layout/fragment_shared_rides" />
+</navigation>

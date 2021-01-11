@@ -1,0 +1,74 @@
+<!--
+  ~ Copyright 2018 The app Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<androidx.preference.PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory app:title="Tracking">
+
+        <SwitchPreferenceCompat
+            app:key="enable_tracking"
+            app:title="Enable Tracking" />
+
+        <ListPreference
+            app:dependency="enable_tracking"
+            app:defaultValue="most_accurate"
+            app:entries="@array/setting_tracking_entries"
+            app:entryValues="@array/setting_tracking_values"
+            app:key="setting_tracking"
+            app:title="Tracking Accuracy"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/sync_header">
+
+        <!-- Here we will add a selection between 4G and Wifi only. -->
+        <!--<ListPreference
+            app:defaultValue="every_minute"
+            app:entries="@array/setting_sync_entries"
+            app:entryValues="@array/setting_sync_values"
+            app:key="setting_sync"
+            app:title="Sync Frequency"
+            app:useSimpleSummaryProvider="true" />-->
+
+        <ListPreference
+            app:defaultValue="every_minute"
+            app:entries="@array/setting_sync_entries"
+            app:entryValues="@array/setting_sync_values"
+            app:key="setting_sync"
+            app:title="Sync Frequency"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="About">
+
+        <Preference android:title="Developer"
+            android:summary="GIS at ETH Zürich (for SCCER Mobility Ridesharing)">
+        </Preference>
+
+        <Preference android:title="Version"
+            android:summary="@string/versionName">
+        </Preference>
+
+        <SwitchPreferenceCompat
+            app:key="developer_mode"
+            app:title="Enable Developer Mode" />
+
+    </PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>
